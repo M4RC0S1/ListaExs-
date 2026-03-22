@@ -1,14 +1,14 @@
-package ControllerProjeto;
+package com.example.demo.ControllerProjeto;
 
-import ModelProjeto.ModelProjeto;
-import ServiceProjeto.ServiceProjeto;
+import com.example.demo.ModelProjeto.ModelProjeto;
+import com.example.demo.ServiceProjeto.ServiceProjeto;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
 @RestController
+@RequestMapping("/projetos")
 
 public class ControllerProjeto {
     private final ServiceProjeto serviceProjeto;

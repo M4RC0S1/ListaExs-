@@ -1,7 +1,7 @@
-package ServiceProjeto;
+package com.example.demo.ServiceProjeto;
 
-import ModelProjeto.ModelProjeto;
-import RepositoryProjeto.RepositoryProjeto;
+import com.example.demo.ModelProjeto.ModelProjeto;
+import com.example.demo.RepositoryProjeto.RepositoryProjeto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

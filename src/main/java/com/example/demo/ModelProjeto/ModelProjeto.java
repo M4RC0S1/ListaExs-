@@ -1,9 +1,6 @@
-package ModelProjeto;
+package com.example.demo.ModelProjeto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
@@ -13,7 +10,9 @@ public class ModelProjeto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+    @Column(name = "nome_projeto")
     private String nome;
+    @Column(name = "data_inicio_projeto")
     private LocalDate dataInicio;
     private LocalDate dataFim;
 
