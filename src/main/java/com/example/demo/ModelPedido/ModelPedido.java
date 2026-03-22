@@ -1,20 +1,25 @@
-package ModelPedido;
+package com.example.demo.ModelPedido;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.demo.RepositoryPedido.RepositoryPedido;
+import com.example.demo.ServicePedido.ServicePedido;
+import jakarta.persistence.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @Entity
+@Table(name = "table_pedido")
 public class ModelPedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+    @Column(name = "data_pedido")
     private LocalDateTime data;
+    @Column(name = "valor_total_pedido")
     private BigDecimal valorTotal;
     private String status;
 
