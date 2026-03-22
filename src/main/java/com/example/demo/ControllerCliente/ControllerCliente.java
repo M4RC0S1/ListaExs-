@@ -1,14 +1,14 @@
-package ControllerCliente;
+package com.example.demo.ControllerCliente;
 
-import ModelCliente.ModelCliente;
-import ServiceCliente.ServiceCliente;
+import com.example.demo.ModelCliente.ModelCliente;
+import com.example.demo.ServiceCliente.ServiceCliente;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
 @RestController
+@RequestMapping("/clientes")
 
 public class ControllerCliente {
     private final ServiceCliente serviceCliente;

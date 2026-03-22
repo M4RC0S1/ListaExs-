@@ -1,6 +1,6 @@
-package RepositoryCliente;
+package com.example.demo.RepositoryCliente;
 
-import ModelCliente.ModelCliente;
+import com.example.demo.ModelCliente.ModelCliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

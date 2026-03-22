@@ -1,7 +1,7 @@
-package ServiceCliente;
+package com.example.demo.ServiceCliente;
 
-import ModelCliente.ModelCliente;
-import RepositoryCliente.RepositoryCliente;
+import com.example.demo.ModelCliente.ModelCliente;
+import com.example.demo.RepositoryCliente.RepositoryCliente;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,7 +23,7 @@ public class ServiceCliente {
     }
 
     public ModelCliente buscarCat(Long id){
-        return repositoryCliente.findById(id).orElseThrow(()-> new RuntimeException("Categoria com ID " + id + "não encontrado"));
+        return repositoryCliente.findById(id).orElseThrow(()-> new RuntimeException("Cliente com ID " + id + "não encontrado"));
     }
 
     public void remover(Long id) {

@@ -1,17 +1,17 @@
-package ModelCliente;
+package com.example.demo.ModelCliente;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "tb_cliente")
 public class ModelCliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+    @Column(name = "nome_cliente")
     private String nome;
+    @Column(name = "email_cliente")
     private String email;
     private String telefone;
 
