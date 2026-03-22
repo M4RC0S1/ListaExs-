@@ -1,14 +1,14 @@
-package ControllerDepartamento;
+package com.example.demo.ControllerDepartamento;
 
-import ModelDepartamento.ModelDepartamento;
-import ServiceDepartamento.ServiceDepartamento;
+import com.example.demo.ModelDepartamento.ModelDepartamento;
+import com.example.demo.ServiceDepartamento.ServiceDepartamento;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
 @RestController
+@RequestMapping("/departamentos")
 public class ControllerDepartamento {
     public final ServiceDepartamento serviceDepartamento;
 

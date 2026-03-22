@@ -1,17 +1,17 @@
-package ModelDepartamento;
+package com.example.demo.ModelDepartamento;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "tb_departamento")
 public class ModelDepartamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+    @Column(name = "nome_departamento")
     private String nome;
+    @Column(name = "localizacao_departamento")
     private String localizacao;
 
     public Long getId() {

@@ -1,7 +1,7 @@
-package ServiceDepartamento;
+package com.example.demo.ServiceDepartamento;
 
-import ModelDepartamento.ModelDepartamento;
-import RepositoryDepartamento.RepositoryDepartamento;
+import com.example.demo.ModelDepartamento.ModelDepartamento;
+import com.example.demo.RepositoryDepartamento.RepositoryDepartamento;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
