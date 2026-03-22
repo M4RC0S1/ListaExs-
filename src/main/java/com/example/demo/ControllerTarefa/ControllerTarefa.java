@@ -1,14 +1,13 @@
-package ControllerTarefa;
+package com.example.demo.ControllerTarefa;
 
-import ModelTarefa.ModelTarefa;
-import ServiceTarefa.ServiceTarefa;
-import org.springframework.stereotype.Controller;
+import com.example.demo.ModelTarefa.ModelTarefa;
+import com.example.demo.ServiceTarefa.ServiceTarefa;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
 @RestController
+@RequestMapping("/tarefas")
 public class ControllerTarefa {
     private final ServiceTarefa serviceTarefa;
 

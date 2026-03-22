@@ -1,9 +1,6 @@
-package ModelTarefa;
+package com.example.demo.ModelTarefa;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
@@ -12,9 +9,11 @@ public class ModelTarefa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
+
+    @Column(name = "titulo_tarefa", nullable = false)
     private String descricao;
+    @Column(name = "descricao_detalhada")
     private LocalDate dataVencimento;
     private Boolean concluida;
 

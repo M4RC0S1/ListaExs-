@@ -1,7 +1,7 @@
-package ServiceTarefa;
+package com.example.demo.ServiceTarefa;
 
-import ModelTarefa.ModelTarefa;
-import RepositoryTarefa.RepositoryTarefa;
+import com.example.demo.ModelTarefa.ModelTarefa;
+import com.example.demo.RepositoryTarefa.RepositoryTarefa;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
