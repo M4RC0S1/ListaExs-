@@ -1,17 +1,18 @@
-package ModelCat;
+package com.example.demo.ModelCat;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Entity
+@Table (name = "tb_categoria")
 public class ModelCat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+    @Column(name = "nome_categoria")
     private String nome;
+    @Column(name = "descricao_categoria")
     private String descricao;
 
     public Long getId() {

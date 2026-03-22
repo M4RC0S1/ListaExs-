@@ -1,14 +1,14 @@
-package ControllerCat;
+package com.example.demo.ControllerCat;
 
-import ModelCat.ModelCat;
-import ServiceCat.ServiceCat;
+import com.example.demo.ModelCat.ModelCat;
+import com.example.demo.ServiceCat.ServiceCat;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
 @RestController
+@RequestMapping("/categorias")
 public class ControllerCat {
     private final ServiceCat serviceCat;
 

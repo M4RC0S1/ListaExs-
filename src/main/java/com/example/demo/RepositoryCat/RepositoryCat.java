@@ -1,6 +1,6 @@
-package RepositoryCat;
+package com.example.demo.RepositoryCat;
 
-import ModelCat.ModelCat;
+import com.example.demo.ModelCat.ModelCat;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

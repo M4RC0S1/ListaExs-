@@ -1,7 +1,7 @@
-package ServiceCat;
+package com.example.demo.ServiceCat;
 
-import ModelCat.ModelCat;
-import RepositoryCat.RepositoryCat;
+import com.example.demo.ModelCat.ModelCat;
+import com.example.demo.RepositoryCat.RepositoryCat;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
