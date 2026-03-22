@@ -1,6 +1,6 @@
-package RepositoryFornecedor;
+package com.example.demo.RepositoryFornecedor;
 
-import ModelFornecedor.ModelFornecedor;
+import com.example.demo.ModelFornecedor.ModelFornecedor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

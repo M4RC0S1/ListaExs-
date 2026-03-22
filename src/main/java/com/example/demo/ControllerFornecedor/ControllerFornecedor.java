@@ -1,14 +1,14 @@
-package ControllerFornecedor;
+package com.example.demo.ControllerFornecedor;
 
-import ModelFornecedor.ModelFornecedor;
-import ServiceFornecedor.ServiceFornecedor;
+import com.example.demo.ModelFornecedor.ModelFornecedor;
+import com.example.demo.ServiceFornecedor.ServiceFornecedor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
 @RestController
+@RequestMapping("/fornecedores")
 public class ControllerFornecedor {
     private final ServiceFornecedor serviceFornecedor;
 

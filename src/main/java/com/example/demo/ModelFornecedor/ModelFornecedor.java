@@ -1,17 +1,17 @@
-package ModelFornecedor;
+package com.example.demo.ModelFornecedor;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "tb_fornecedor")
 public class ModelFornecedor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+    @Column(name = "nome_fantasia_fornecedor")
     private String nomeFantasia;
+    @Column(name = "cnpj_fornecedor")
     private String cnpj;
     private String contato;
 

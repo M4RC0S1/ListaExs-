@@ -1,7 +1,7 @@
-package ServiceFornecedor;
+package com.example.demo.ServiceFornecedor;
 
-import ModelFornecedor.ModelFornecedor;
-import RepositoryFornecedor.RepositoryFornecedor;
+import com.example.demo.ModelFornecedor.ModelFornecedor;
+import com.example.demo.RepositoryFornecedor.RepositoryFornecedor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
