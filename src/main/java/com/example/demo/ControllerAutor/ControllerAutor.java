@@ -1,14 +1,14 @@
-package ControllerAutor;
+package com.example.demo.ControllerAutor;
 
-import ModelAutor.ModelAutor;
-import ServiceAutor.ServiceAutor;
+import com.example.demo.ModelAutor.ModelAutor;
+import com.example.demo.ServiceAutor.ServiceAutor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
 @RestController
+@RequestMapping("/autores")
 public class ControllerAutor {
     private final ServiceAutor serviceAutor;
 

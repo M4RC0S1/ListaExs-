@@ -1,7 +1,7 @@
-package ServiceAutor;
+package com.example.demo.ServiceAutor;
 
-import ModelAutor.ModelAutor;
-import RepositoryAutor.RepositoryAutor;
+import com.example.demo.ModelAutor.ModelAutor;
+import com.example.demo.RepositoryAutor.RepositoryAutor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

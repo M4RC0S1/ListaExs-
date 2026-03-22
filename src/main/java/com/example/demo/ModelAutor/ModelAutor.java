@@ -1,19 +1,19 @@
-package ModelAutor;
+package com.example.demo.ModelAutor;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "tb_autor")
 public class ModelAutor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+    @Column(name = "nome_autor")
     private String nome;
+    @Column(name = "nacionalidade_autor")
     private String nacionalidade;
     private LocalDate dataNascimento;
 
