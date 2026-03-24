@@ -1,13 +1,11 @@
-package ModelProduto;
+package com.example.demo.ModelProduto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 
 @Entity
+@Table(name = "tb_produto")
 public class ModelProduto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,11 +18,11 @@ public class ModelProduto {
     public Long getId() {
         return id;
     }
-
+    @Column(name = "nome_produto")
     public void setId(Long id) {
         this.id = id;
     }
-
+    @Column(name = "preco")
     public BigDecimal getPreco() {
         return preco;
     }

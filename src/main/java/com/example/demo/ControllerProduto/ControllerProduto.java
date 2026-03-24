@@ -1,13 +1,14 @@
-package ControllerProduto;
+package com.example.demo.ControllerProduto;
 
-import ModelProduto.ModelProduto;
-import ServiceProduto.ServiceProduto;
+import com.example.demo.ModelProduto.ModelProduto;
+import com.example.demo.ServiceProduto.ServiceProduto;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
+@RequestMapping("/produtos")
 public class ControllerProduto {
     private final ServiceProduto serviceProduto;
 
