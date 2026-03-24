@@ -1,12 +1,12 @@
-package ControllerLivros;
+package com.example.demo.ControllerLivros;
 
-import ModelLivros.ModelLivros;
-import ServiceLivros.ServiceLivros;
+import com.example.demo.ModelLivros.ModelLivros;
+import com.example.demo.ServiceLivros.ServiceLivros;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/livros")
 public class ControllerLivros {
     private final ServiceLivros serviceLivros;
 
